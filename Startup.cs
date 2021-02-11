@@ -12,6 +12,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using ServiceRequest.Models;
 using Microsoft.EntityFrameworkCore;
+using ServiceRequest.Repository.Interface;
+using ServiceRequest.Repository.Business;
 
 namespace ServiceRequest
 {
@@ -27,6 +29,8 @@ namespace ServiceRequest
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IServiceRequest, ServiceRequestBusiness>();
+
             services.AddDbContext<ServiceRequestContext>(opt => opt.UseSqlServer(Configuration["ConnectionString:testdb"]));
 
             services.AddControllers();

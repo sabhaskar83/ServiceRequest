@@ -21,9 +21,13 @@ namespace ServiceRequest.Controllers
         }
         // GET: api/<ServiceRequestController>
         [HttpGet]
-        public ActionResult<ServiceRequestDto> Get()
+        public ActionResult<List<ServiceRequestDto>> Get()
         {
-            return Ok();
+            var response= _servicerequest.GetAllRecords();
+            if (response.Count == 0)
+                return NoContent();
+            else
+                return Ok(response);
         }
 
         // GET api/<ServiceRequestController>/5
