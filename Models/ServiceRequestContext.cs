@@ -12,5 +12,6 @@ namespace ServiceRequest.Models
         {
 
         }
+        public DbSet<ServiceRequestModel> servicerequest { get; set; }
     }
 }
