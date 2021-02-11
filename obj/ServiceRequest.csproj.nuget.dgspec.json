@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Indoor\\ServiceRequest\\ServiceRequest\\ServiceRequest.csproj": {}
+    "D:\\Indoor\\ServiceRequest\\New folder\\ServiceRequest\\ServiceRequest.csproj": {}
   },
   "projects": {
-    "D:\\Indoor\\ServiceRequest\\ServiceRequest\\ServiceRequest.csproj": {
+    "D:\\Indoor\\ServiceRequest\\New folder\\ServiceRequest\\ServiceRequest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Indoor\\ServiceRequest\\ServiceRequest\\ServiceRequest.csproj",
+        "projectUniqueName": "D:\\Indoor\\ServiceRequest\\New folder\\ServiceRequest\\ServiceRequest.csproj",
         "projectName": "ServiceRequest",
-        "projectPath": "D:\\Indoor\\ServiceRequest\\ServiceRequest\\ServiceRequest.csproj",
+        "projectPath": "D:\\Indoor\\ServiceRequest\\New folder\\ServiceRequest\\ServiceRequest.csproj",
         "packagesPath": "C:\\Users\\sabhaskar\\.nuget\\packages\\",
-        "outputPath": "D:\\Indoor\\ServiceRequest\\ServiceRequest\\obj\\",
+        "outputPath": "D:\\Indoor\\ServiceRequest\\New folder\\ServiceRequest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -42,6 +42,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

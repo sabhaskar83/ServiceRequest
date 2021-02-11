@@ -1,0 +1,10 @@
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\bin\Debug\netcoreapp3.1\ServiceRequest.exe
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\obj\Debug\netcoreapp3.1\ServiceRequest.csprojAssemblyReference.cache
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\obj\Debug\netcoreapp3.1\ServiceRequest.AssemblyInfoInputs.cache
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\obj\Debug\netcoreapp3.1\ServiceRequest.AssemblyInfo.cs
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\obj\Debug\netcoreapp3.1\ServiceRequest.RazorTargetAssemblyInfo.cache
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\obj\Debug\netcoreapp3.1\staticwebassets\ServiceRequest.StaticWebAssets.Manifest.cache
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\obj\Debug\netcoreapp3.1\staticwebassets\ServiceRequest.StaticWebAssets.xml
