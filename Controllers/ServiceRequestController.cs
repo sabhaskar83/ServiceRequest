@@ -32,9 +32,13 @@ namespace ServiceRequest.Controllers
 
         // GET api/<ServiceRequestController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ActionResult<ServiceRequestDto> Get(Guid id)
         {
-            return "value";
+            var record= _servicerequest.GetRecordById(id);
+            if (record == null)
+                return NotFound();
+            else
+                return Ok(record);
         }
 
         // POST api/<ServiceRequestController>

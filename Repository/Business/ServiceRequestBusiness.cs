@@ -52,7 +52,26 @@ namespace ServiceRequest.Repository.Business
 
         public ServiceRequestDto GetRecordById(Guid id)
         {
-            throw new NotImplementedException();
+            ServiceRequestDto srd = null;
+            var record = _serviceRequestContext.servicerequest.Where(m=>m.id==id)
+                                                                          .FirstOrDefault();
+            if (record != null)
+            {
+                srd = new ServiceRequestDto()
+                {
+                    buildingCode = record.buildingCode,
+                    description = record.description,
+                    createdDate = record.createdDate,
+                    lastModifiedDate = record.lastModifiedDate.Value,
+                    createdBy = record.createdBy,
+                    currentStatus = (Enum.Enums.CurrentStatus)System.Enum.ToObject(typeof(Enums), record.currentStatus),
+                    id = record.id,
+                    lastModifiedBy = record.lastModifiedBy
+
+                };
+            }
+           
+            return srd;
         }
 
         public void UpdateRecord(Guid id)
