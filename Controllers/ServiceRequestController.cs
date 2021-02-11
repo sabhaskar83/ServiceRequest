@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ServiceRequest.Dtos;
+using ServiceRequest.Models;
 using ServiceRequest.Repository.Interface;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -43,8 +44,12 @@ namespace ServiceRequest.Controllers
 
         // POST api/<ServiceRequestController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ActionResult Post(ServiceRequestModel request)
         {
+            if (request.id == null || request.id == Guid.Empty || request == null)
+                return BadRequest();
+            _servicerequest.CreateRecord(request);
+              return  StatusCode(201);
         }
 
         // PUT api/<ServiceRequestController>/5

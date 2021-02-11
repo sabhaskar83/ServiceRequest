@@ -11,7 +11,7 @@ namespace ServiceRequest.Repository.Interface
     {
         ServiceRequestDto GetRecordById(Guid id);
         List<ServiceRequestDto> GetAllRecords();
-        ServiceRequestModel CreateRecord();
+        void CreateRecord(ServiceRequestModel request);
 
         void UpdateRecord(Guid id);
 

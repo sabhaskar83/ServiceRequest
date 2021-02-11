@@ -16,10 +16,11 @@ namespace ServiceRequest.Repository.Business
         {
             this._serviceRequestContext = serviceRequestContext;
         }
-        public ServiceRequestModel CreateRecord()
+        public void CreateRecord(ServiceRequestModel request)
         {
-            throw new NotImplementedException();
-        }
+            var response = _serviceRequestContext.servicerequest.Add(request);
+            _serviceRequestContext.SaveChanges();
+                  }
 
         public void DeleteRecord(Guid id)
         {
