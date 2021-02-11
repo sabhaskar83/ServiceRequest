@@ -60,4 +60,3 @@ D:\Indoor\ServiceRequest\New folder\ServiceRequest\obj\Debug\netcoreapp3.1\Servi
 D:\Indoor\ServiceRequest\New folder\ServiceRequest\obj\Debug\netcoreapp3.1\ServiceRequest.dll
 D:\Indoor\ServiceRequest\New folder\ServiceRequest\obj\Debug\netcoreapp3.1\ServiceRequest.pdb
 D:\Indoor\ServiceRequest\New folder\ServiceRequest\obj\Debug\netcoreapp3.1\ServiceRequest.genruntimeconfig.cache
-D:\Indoor\ServiceRequest\New folder\ServiceRequest\obj\Debug\netcoreapp3.1\ServiceRequest.csprojAssemblyReference.cache

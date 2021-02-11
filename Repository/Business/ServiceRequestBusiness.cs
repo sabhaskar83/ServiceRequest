@@ -23,8 +23,15 @@ namespace ServiceRequest.Repository.Business
             _serviceRequestContext.SaveChanges();
         }
 
-        public void DeleteRecord(Guid id)
+        public int DeleteRecord(Guid id)
         {
+            var record = _serviceRequestContext.servicerequest.Where(m => m.id == id).FirstOrDefault();
+            if (record == null)
+                return 0;
+            _serviceRequestContext.servicerequest.Remove(record);
+            _serviceRequestContext.SaveChanges();
+            return 1;
+
             throw new NotImplementedException();
         }
 

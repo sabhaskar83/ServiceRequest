@@ -15,6 +15,6 @@ namespace ServiceRequest.Repository.Interface
 
         int UpdateRecord(Guid id,ServiceRequestModel request);
 
-        void DeleteRecord(Guid id);
+        int DeleteRecord(Guid id);
     }
 }

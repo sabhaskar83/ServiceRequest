@@ -67,8 +67,15 @@ namespace ServiceRequest.Controllers
 
         // DELETE api/<ServiceRequestController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public ActionResult Delete(Guid id)
         {
+            if (id == Guid.Empty)
+                return BadRequest();
+            int result = _servicerequest.DeleteRecord(id);
+            if (result == 0)
+                return StatusCode(404);
+            else
+                return StatusCode(201);
         }
     }
 }
