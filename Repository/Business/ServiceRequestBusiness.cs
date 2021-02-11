@@ -45,7 +45,7 @@ namespace ServiceRequest.Repository.Business
                 ServiceRequestDto srd = new ServiceRequestDto()
                 {
                     buildingCode = srm.buildingCode,
-                    currentStatus = (Enum.Enums.CurrentStatus)System.Enum.ToObject(typeof(Enums), srm.currentStatus),
+                    currentStatus = (Enum.Enums.CurrentStatus)srm.currentStatus,
                     description=srm.description,
                     createdDate=srm.createdDate,
                     createdBy=srm.createdBy,
@@ -74,7 +74,7 @@ namespace ServiceRequest.Repository.Business
                     createdDate = record.createdDate,
                     lastModifiedDate = record.lastModifiedDate.Value,
                     createdBy = record.createdBy,
-                    currentStatus = (Enum.Enums.CurrentStatus)System.Enum.ToObject(typeof(Enums), record.currentStatus),
+                    currentStatus = (Enum.Enums.CurrentStatus)record.currentStatus,
                     id = record.id,
                     lastModifiedBy = record.lastModifiedBy
 
