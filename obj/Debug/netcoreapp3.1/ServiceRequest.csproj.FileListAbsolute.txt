@@ -8,3 +8,17 @@ D:\Indoor\ServiceRequest\New folder\ServiceRequest\obj\Debug\netcoreapp3.1\Servi
 D:\Indoor\ServiceRequest\New folder\ServiceRequest\obj\Debug\netcoreapp3.1\ServiceRequest.RazorTargetAssemblyInfo.cache
 D:\Indoor\ServiceRequest\New folder\ServiceRequest\obj\Debug\netcoreapp3.1\staticwebassets\ServiceRequest.StaticWebAssets.Manifest.cache
 D:\Indoor\ServiceRequest\New folder\ServiceRequest\obj\Debug\netcoreapp3.1\staticwebassets\ServiceRequest.StaticWebAssets.xml
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Indoor\ServiceRequest\New folder\ServiceRequest\obj\Debug\netcoreapp3.1\ServiceRequest.csproj.CopyComplete
