@@ -40,22 +40,29 @@ namespace ServiceRequest.Repository.Business
         {
             var servicerequestlist = _serviceRequestContext.servicerequest.ToList();
             List<ServiceRequestDto> response = new List<ServiceRequestDto>();
-            foreach (ServiceRequestModel srm in servicerequestlist)
+            try
             {
-                ServiceRequestDto srd = new ServiceRequestDto()
+                foreach (ServiceRequestModel srm in servicerequestlist)
                 {
-                    buildingCode = srm.buildingCode,
-                    currentStatus = (Enum.Enums.CurrentStatus)srm.currentStatus,
-                    description=srm.description,
-                    createdDate=srm.createdDate,
-                    createdBy=srm.createdBy,
-                    lastModifiedDate=srm.lastModifiedDate.Value,
-                    id=srm.id,
-                    lastModifiedBy=srm.lastModifiedBy,
-                    
+                    ServiceRequestDto srd = new ServiceRequestDto()
+                    {
+                        buildingCode = srm.buildingCode,
+                        currentStatus = (Enum.Enums.CurrentStatus)srm.currentStatus,
+                        description = srm.description,
+                        createdDate = srm.createdDate,
+                        createdBy = srm.createdBy,
+                        lastModifiedDate = srm.lastModifiedDate==null?DateTime.MinValue: srm.lastModifiedDate.Value,
+                        id = srm.id,
+                        lastModifiedBy = srm.lastModifiedBy,
 
-                };
-                response.Add(srd);
+
+                    };
+                    response.Add(srd);
+                }
+            }
+            catch(Exception ex)
+            {
+
             }
             return response;
         }
@@ -72,7 +79,7 @@ namespace ServiceRequest.Repository.Business
                     buildingCode = record.buildingCode,
                     description = record.description,
                     createdDate = record.createdDate,
-                    lastModifiedDate = record.lastModifiedDate.Value,
+                    lastModifiedDate = record.lastModifiedDate == null ? DateTime.MinValue : record.lastModifiedDate.Value,
                     createdBy = record.createdBy,
                     currentStatus = (Enum.Enums.CurrentStatus)record.currentStatus,
                     id = record.id,

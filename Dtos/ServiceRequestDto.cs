@@ -15,6 +15,6 @@ namespace ServiceRequest.Dtos
         public string createdBy { get; set; }
         public DateTime createdDate { get; set; }
         public string lastModifiedBy { get; set; }
-        public DateTime lastModifiedDate { get; set; }
+        public DateTime? lastModifiedDate { get; set; }
     }
 }
