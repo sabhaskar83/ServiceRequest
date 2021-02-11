@@ -13,7 +13,7 @@ namespace ServiceRequest.Repository.Interface
         List<ServiceRequestDto> GetAllRecords();
         void CreateRecord(ServiceRequestModel request);
 
-        void UpdateRecord(Guid id);
+        int UpdateRecord(Guid id,ServiceRequestModel request);
 
         void DeleteRecord(Guid id);
     }

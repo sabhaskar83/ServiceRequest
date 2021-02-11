@@ -54,8 +54,15 @@ namespace ServiceRequest.Controllers
 
         // PUT api/<ServiceRequestController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public ActionResult Put(Guid id, [FromBody] ServiceRequestModel request)
         {
+            if (request.id == null || request.id == Guid.Empty || request == null)
+                return BadRequest();
+           int result= _servicerequest.UpdateRecord( id, request);
+            if (result == 0)
+                return StatusCode(404);
+            else
+               return Ok();
         }
 
         // DELETE api/<ServiceRequestController>/5

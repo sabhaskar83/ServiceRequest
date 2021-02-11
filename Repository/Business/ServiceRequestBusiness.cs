@@ -1,4 +1,5 @@
-﻿using ServiceRequest.Dtos;
+﻿using Microsoft.AspNetCore.Mvc;
+using ServiceRequest.Dtos;
 using ServiceRequest.Enum;
 using ServiceRequest.Models;
 using ServiceRequest.Repository.Interface;
@@ -20,7 +21,7 @@ namespace ServiceRequest.Repository.Business
         {
             var response = _serviceRequestContext.servicerequest.Add(request);
             _serviceRequestContext.SaveChanges();
-                  }
+        }
 
         public void DeleteRecord(Guid id)
         {
@@ -75,9 +76,20 @@ namespace ServiceRequest.Repository.Business
             return srd;
         }
 
-        public void UpdateRecord(Guid id)
+        public int UpdateRecord(Guid id,ServiceRequestModel request)
         {
-            throw new NotImplementedException();
+           var record= _serviceRequestContext.servicerequest.Where(m => m.id == id).FirstOrDefault();
+            if (record == null)
+                return 0;
+            record.description = request.description;
+            record.buildingCode = request.buildingCode;
+            record.currentStatus = request.currentStatus;
+            request.lastModifiedBy = request.lastModifiedBy;
+            request.lastModifiedDate = request.lastModifiedDate;
+            _serviceRequestContext.servicerequest.Add(request);
+            _serviceRequestContext.SaveChanges();
+            return 1;
+
         }
     }
 }
