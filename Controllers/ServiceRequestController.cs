@@ -46,7 +46,7 @@ namespace ServiceRequest.Controllers
         [HttpPost]
         public ActionResult Post(ServiceRequestModel request)
         {
-            if (request.id == null || request.id == Guid.Empty || request == null)
+            if ( request == null)
                 return BadRequest();
             _servicerequest.CreateRecord(request);
               return  StatusCode(201);

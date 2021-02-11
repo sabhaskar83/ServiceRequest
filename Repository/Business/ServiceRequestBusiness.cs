@@ -19,6 +19,7 @@ namespace ServiceRequest.Repository.Business
         }
         public void CreateRecord(ServiceRequestModel request)
         {
+            request.id = Guid.NewGuid();
             var response = _serviceRequestContext.servicerequest.Add(request);
             _serviceRequestContext.SaveChanges();
         }
